@@ -1,80 +1,102 @@
-![alt text](https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/gallery-images/r1/2de72242-6d5a-4740-87be-c51b7a941c92)
-# Event Name:- Hacktoberfest Meetup 2025
-### Event Date:- 27th October 2025
-### Event Time:- 10:30am - 4:45pm
-### Event Venue:- JIS University, Kolkata
-### Registration Link:- [Hacktoberfest Meetup](https://luma.com/3zjevylm)
-### Hacktoberfest Meetup GitHub Page:- [Hacktoberfest GitHub Page](https://gh.io/hacktoberfestmeetup25)
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hacktoberfest Meetup 2025 - JIS University</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans">
+  <div class="max-w-4xl mx-auto p-6">
+    <div class="text-center">
+      <img src="https://images.lumacdn.com/cdn-cgi/image/format=auto,fit=cover,dpr=2,background=white,quality=75,width=280,height=280/gallery-images/r1/2de72242-6d5a-4740-87be-c51b7a941c92" alt="Hacktoberfest Meetup Banner" class="mx-auto rounded-2xl shadow-md mb-4">
+      <h1 class="text-3xl font-bold text-blue-600">Hacktoberfest Meetup 2025</h1>
+      <p class="mt-2 text-gray-700">JIS University, Kolkata</p>
+      <p class="text-sm text-gray-500">27th October 2025 | 10:30 AM – 4:45 PM</p>
+      <div class="mt-4">
+        <a href="https://luma.com/3zjevylm" class="text-white bg-blue-600 hover:bg-blue-700 px-4 py-2 rounded-md text-sm mr-2">Register</a>
+        <a href="https://gh.io/hacktoberfestmeetup25" class="text-blue-600 underline text-sm">GitHub Page</a>
+      </div>
+    </div>
 
---- 
+    <hr class="my-8 border-gray-300">
 
-> **The event has been divided into two sections of the day. The first section is the welcome and felicitation of the core team and seniors of GDG JISU and the second section is the Hacktoberfest Meetup session by Abhisekh Kushwaha and the Guest Speakers.**
+    <div class="space-y-8">
+      <section>
+        <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Phase 1 — Welcome and Felicitation Section</h2>
 
-# Phase1 - WELCOME AND FELICITATION SECTION
+        <div class="bg-white rounded-xl shadow p-5 space-y-4">
+          <h3 class="font-semibold text-lg text-gray-800">9:40 AM – 10:30 AM</h3>
+          <p class="text-gray-600">Venue Preparation & Check-In</p>
 
-### 9:40am - 10:30am - [VENUE PREPARATION AND CHECKIN]
-### 10:30am - 11:00am - [WELCOME NOTES]
-- **10:30am - 10:35am** - Dr. Sandip Roy Speaker
-- **10:35am - 10:40am** - Dr. Dharmpal Singh
-- **10:40am - 10:50am** - Dr. Bidisha Bhabani
-- **10:50am - 11:00am** - Dr. Subarsha Banerjee
+          <h3 class="font-semibold text-lg text-gray-800">10:30 AM – 11:00 AM — Welcome Notes</h3>
+          <ul class="list-disc ml-6 text-gray-600">
+            <li>Dr. Sandip Roy — 10:30–10:35</li>
+            <li>Dr. Dharmpal Singh — 10:35–10:40</li>
+            <li>Dr. Bidisha Bhabani — 10:40–10:50</li>
+            <li>Dr. Subarsha Banerjee — 10:50–11:00</li>
+          </ul>
 
-### NOTES OF GRATITUDE TO THE AVAILABLE GUESTS FOR US 
+          <h3 class="font-semibold text-lg text-gray-800">Notes of Gratitude</h3>
+          <ul class="list-disc ml-6 text-gray-600">
+            <li>Hrittik Roy – vCluster Platform Advocate</li>
+            <li>Abhisekh Kushwaha – GitHub Campus Expert</li>
+            <li>Debojeet Karmakar – Full Stack Developer at Prepverse</li>
+            <li>Samrat Talukdar – NIT GDG Lead</li>
+            <li>Nazreen Imam – GNIT GDG Lead</li>
+          </ul>
 
-- **Hrittik Roy** - vCluster Platfrom Advocate
-- **Abhisekh Kushwaha** - GitHub Campus Expert
-- **Debojeet Karmakar** - Full Stack Developer at Prepverse
-- **Samrat Talukdar** - NiT GDG Lead
-- **Nazreen Imam** - GNIT GDG Lead
+          <h3 class="font-semibold text-lg text-gray-800">11:00 AM – 11:15 AM — Core Team 2025–26 Introduction</h3>
+          <ul class="list-disc ml-6 text-gray-600">
+            <li>GDG JISU Overview – Ayushman Bhattacharya (Lead)</li>
+            <li>Core Team Introduction (2025–2026)</li>
+            <li>Felicitation of GDG Seniors: Manish Gupta, Shemanti Pal, Rahul Kamliya, Ankita Chakraborty</li>
+            <li>Address by Mr. Suprativ Saha (Faculty Advisor)</li>
+          </ul>
 
-## 11:00am - 11:15am -- [INFO SESSION CORE TEAM 2025 INTRODUCTION]
-- **11:00am - 11:05am** - WORD ON GDG JISU BY OUR CURRENT GDG LEAD - Ayushman Bhattacharya
-- **11:05am - 11:10am** - CORE TEAM INTRODUCTION FOR THE YEAR 2025 - 2026
-- **11:10am - 11:15am** - [FELICITATE GDG SENIORS FOR THEIR CONTRIBUTION TO GDG JISU]
-    - Felicitate Manish Gupta - Ex GDG Web Dev Facilitator
-    - Felicitate Shemanti Pal - Ex GDG Design Lead
-    - Felicitate Rahul Kamliya - Ex GDG Head Mentor
-    - Felicitate Ankita Chakraborty - Ex GDG Organizer
+          <h3 class="font-semibold text-lg text-gray-800">11:15 AM – 11:30 AM — Felicitation of GDG Leads (Other Colleges)</h3>
+          <ul class="list-disc ml-6 text-gray-600">
+            <li>Samrat Talukdar – NIT GDG Lead (Certificate, Pen & Bouquet)</li>
+            <li>Nazreen Imam – GNIT GDG Lead (Certificate, Pen & Bouquet)</li>
+          </ul>
 
-- Introduce Mr. Suprativ Saha as our faculty advisor for GDG & request for a short speech
+          <h3 class="font-semibold text-lg text-gray-800">11:30 AM – 11:50 AM — Introduction of Guest Speakers</h3>
+          <ul class="list-disc ml-6 text-gray-600">
+            <li>Hrittik Roy – vCluster Platform Advocate</li>
+            <li>Abhisekh Kushwaha – GitHub Campus Expert</li>
+            <li>Debojeet Karmakar – Full Stack Developer at Prepverse</li>
+          </ul>
+        </div>
+      </section>
 
-## 11:20am - 11:30am - [INTRODUCTION OF GDG LEADS OF OTHER COLLEGES & FELICITATION]
-- Introduction of GDG Lead of NiT - Samrat Talukdar
-[Felicitation with a Certificate + Pen + Bouquet]
-(Short Speech for 2-3 mins if possible)
-- Introduction of GDG Lead of GNIT - Nazreen Imam
-[Felicitation with a Certificate + Pen + Bouquet]
-(Short Speech for 2-3 mins if possible)
+      <section>
+        <h2 class="text-2xl font-semibold text-indigo-600 mb-3">Phase 2 — Hacktoberfest Meetup Session</h2>
 
-### 11:30am - 11:45am - [INTRODUCTION OF OUR GUEST SPEAKERS FOR THE DAY] 
-- Introduction of Mr. Hrittik Roy - vCluster Platform Advocate
-[Felicitation with a Certificate + Pen + Bouquet]
-(Short Speech for 2-3 mins if possible)
-- Introduction of Mr. Abhisekh Kushwaha - GitHub Campus Expert
-[Felicitation with a Certificate + Pen + Bouquet]
-(Short Speech for 2-3 mins if possible)
-- Introduction of Mr. Debojeet Karmakar - Full Stack Developer at Prepverse
-[Felicitation with a Certificate + Pen + Bouquet]
-(Short Speech for 2-3 mins if possible)
+        <div class="bg-white rounded-xl shadow p-5 space-y-4">
+          <h3 class="font-semibold text-lg text-gray-800">11:50 AM – 1:00 PM — Hacktoberfest Talk Session (Part 1)</h3>
+          <p class="text-gray-600">Hosted by Abhisekh Kushwaha & Guest Speakers</p>
 
----
+          <h3 class="font-semibold text-lg text-gray-800">1:00 PM – 1:50 PM — Lunch / Recess</h3>
 
-# Phase 2 - HACKTOBERFEST MEETUP SESSION
+          <h3 class="font-semibold text-lg text-gray-800">2:00 PM – 3:30 PM — Hacktoberfest Talk Session (Part 2)</h3>
+          <p class="text-gray-600">Continuation of discussions, open-source demos, and Q&A.</p>
 
+          <h3 class="font-semibold text-lg text-gray-800">3:30 PM – 3:45 PM — Quiz & Fun Activities</h3>
+          <p class="text-gray-600">Top 3 rankers receive stickers & pens 🎉</p>
 
-### 11:30am - 12:50pm
-> **HACKTOBERFEST TALK SESSION BY ABHISEKH Kushwaha AND THE GUEST SPEAKERS**
+          <h3 class="font-semibold text-lg text-gray-800">3:45 PM – 4:45 PM — Wrap-Up & Closing</h3>
+          <ul class="list-disc ml-6 text-gray-600">
+            <li>Vote of Thanks</li>
+            <li>Feedback & Certificate Distribution</li>
+            <li>Group Photo & Networking</li>
+          </ul>
+        </div>
+      </section>
+    </div>
 
----
-### 1:00pm - 1:50pm - LUNCH BREAK / RECESS
----
-### 2:00pm - 3:30pm
-> **HACKTOBERFEST TALK SESSION BY ABHISEKH Kushwaha AND THE GUEST SPEAKERS**
----
-### 3:30pm - 3:45pm
-> **QUIZ & FUN STUFF & STICKERS + PEN TO THE QUIZ TOP 3 RANKERS**
----
-
-
-##  3:45pm - 4:45pm
-> **WRAP UP AND PACK**
+    <footer class="text-center text-sm text-gray-500 mt-10">
+      © 2025 GDG JISU | Hacktoberfest Meetup 2025
+    </footer>
+  </div>
+</body>
+</html>

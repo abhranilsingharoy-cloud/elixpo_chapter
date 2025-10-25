@@ -59,40 +59,51 @@ self.addEventListener('fetch', event => {
   event.respondWith(
     caches.match(event.request)
       .then(response => {
-        // Return cached version or fetch from network
+        // If there's a cached response, return it
         if (response) {
           console.log('Service Worker: Serving from cache', event.request.url);
           return response;
         }
-        
+
+        // Otherwise, fetch from network and cache for future use
         return fetch(event.request)
-          .then(response => {
-            // Check if we received a valid response
-            if (!response || response.status !== 200 || response.type !== 'basic') {
-              return response;
+          .then(networkResponse => {
+            // If the response is invalid, don't cache it
+            if (!networkResponse || networkResponse.status !== 200 || networkResponse.type !== 'basic') {
+              return networkResponse;
             }
 
-            // Clone the response
-            const responseToCache = response.clone();
+            // Clone the response to avoid stream consumption
+            const responseToCache = networkResponse.clone();
 
+            // Open the cache and store the response
             caches.open(CACHE_NAME)
               .then(cache => {
-                cache.put(event.request, responseToCache);
+                cache.put(event.request, responseToCache)
+                  .catch(error => {
+                    console.error('Service Worker: Failed to cache', event.request.url, error);
+                  });
               });
 
-            return response;
+            return networkResponse;
           })
           .catch(() => {
-            // Return offline page for navigation requests
+            // If network fails, serve offline page for HTML requests
             if (event.request.destination === 'document') {
               return caches.match('/offline.html');
             }
+
+            // Handle other types of failed requests here (like API)
+            return new Response('Network error occurred, and no offline page is available', {
+              status: 408,
+              statusText: 'Request Timeout'
+            });
           });
       })
   );
 });
 
-// Background sync for when connection is restored
+// Background sync (if used in future)
 self.addEventListener('sync', event => {
   if (event.tag === 'background-sync') {
     console.log('Service Worker: Background sync triggered');
@@ -114,7 +125,7 @@ self.addEventListener('push', event => {
         primaryKey: data.primaryKey
       }
     };
-    
+
     event.waitUntil(
       self.registration.showNotification(data.title, options)
     );

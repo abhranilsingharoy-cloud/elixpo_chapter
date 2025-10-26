@@ -1,5 +1,14 @@
-github: [Circuit-Overtime]
-patreon: CircuitOvertime
-ko_fi: elixpo
-buy_me_a_coffee: elixpo
+# This file is used by GitHub to display sponsor buttons on your repository.
+# It should be placed in the .github/ directory.
 
+# GitHub Sponsors
+github: [Circuit-Overtime]
+
+# Patreon
+patreon: CircuitOvertime
+
+# Ko-fi
+ko_fi: elixpo
+
+# Buy Me a Coffee
+buy_me_a_coffee: elixpo

@@ -208,16 +208,22 @@ class AnthropicAdapter(AIAdapter):
             )
             
             # Extract text from response
-            if not response.content or len(response.content) == 0:
-                return 5
-            
-            content = response.content[0].text.strip()
-            
-            # Extract number from response
-            score = int(content)
-            
-            # Clamp to valid range
-            return max(1, min(10, score))
+            if not response.content or len(response.content) == 0:
+                return 5
+            
+            content = response.content[0].text.strip()
+            
+            # Extract number from response (robustly)
+            match = re.search(r'\d+', content)
+            if match:
+                score = int(match.group(0))
+            else:
+                # Fallback if no number found
+                print(f"Anthropic importance scoring: No number found in response '{content}'. Defaulting to 5.")
+                return 5
+            
+            # Clamp to valid range
+            return max(1, min(10, score))
         
         except Exception as e:
             print(f"Anthropic importance scoring error: {e}")

@@ -71,6 +71,7 @@ jobs:
             echo "$HOME/.bun/bin" >> $GITHUB_PATH
           fi
           bun --version
+          export PATH="$HOME/.bun/bin:$PATH"
         shell: bash
 
       - name: Configure Claude Code Router

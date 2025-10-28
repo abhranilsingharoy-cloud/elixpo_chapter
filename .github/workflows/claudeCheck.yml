@@ -76,7 +76,7 @@ jobs:
       - name: Configure Claude Code Router
         run: |
           mkdir -p $HOME/.claude-code-router
-          cat > $HOME/.claude-code-router/config.json << 'EOF'
+          cat > $HOME/.claude-code-router/config.json << "EOF"
           {
             "LOG": true,
             "NON_INTERACTIVE_MODE": true,
@@ -111,19 +111,19 @@ jobs:
           echo "ROUTER_PID=$ROUTER_PID" >> $GITHUB_ENV
 
           echo "⏳ Waiting for router to start..."
-          for i in {1..30}; do
-            if curl -s -f http://localhost:3456/ >/dev/null 2>&1; then
-              echo "✅ Router is ready!"
-              break
-            fi
-            echo "Attempt $i/30..."
-            sleep 2
-            if [ $i -eq 30 ]; then
-              echo "❌ Router failed to start after 60s."
-              cat router.log || true
-              exit 1
-            fi
-          done
+         for i in {1..40}; do
+  if curl -s -f http://localhost:3456/health >/dev/null 2>&1; then
+    echo "✅ Router is healthy!"
+    break
+  fi
+  echo "Attempt $i/40... waiting for router to start"
+  sleep 2
+  if [ $i -eq 40 ]; then
+    echo "❌ Router failed to start after 80 seconds."
+    cat router.log || true
+    exit 1
+  fi
+done
         shell: bash
 
       - name: Verify Router Health
